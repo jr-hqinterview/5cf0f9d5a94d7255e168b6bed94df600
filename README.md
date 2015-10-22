@@ -25,45 +25,58 @@ The encrypted json value will store in the delicated table. The table just have 
 
 ## File short description
 
-- application/config/payment.php
+- application/config/payment.php.
 
   Payment configuration, including gateway self config, currency and gateway which accpet in the system.
 
 - application/controllers/Payment.php
+
   The main controller for this assignment. Handling the payment form, transaction and the result.
 
 - application/controllers/Test.php
+
   This controller provide the basic unit test page, transaction record query, credit card sample and the bonus question answer.
 
 - application/core/MY_Controller.php
+
   It's extend from the CI original controller. enhance the load view method.
 
 - application/libraries/PaymentGatewayInterface.php
+
   Abstract class for the payment gateway library.
 
 - application/libraries/Paypal.php
+
   Handling the transaction with the Paypal Rest API.
   implement from the PaymentGatewayInterface
 
 - application/libraries/Paypal.php  
+
   Handling the transaction with the Braintree PHP Library.
   implement from the PaymentGatewayInterface
 
 - application/models/Payment_model.php
+
   Providing the credit card identify function.
+
   Based on the assignment rules to assign which payment gateway function.
 
 - application/third_party/braintree/*
+
   Braintree PHP Library
 
 - application/views/templates/*
+
   The header and footer for the view.
 
 - application/views/payment/*
+
   View files for the Payment Controller
 
 - application/views/*
+
   View files for the Test Controller
 
 - public/asset/*
+
   css, image and javascript files.
