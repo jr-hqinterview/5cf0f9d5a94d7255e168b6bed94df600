@@ -25,7 +25,8 @@ The encrypted json value will store in the delicated table. The table just have 
 
 ## File short description
 
-- application/config/payment.php.
+- application/config/payment.php
+
   Payment configuration, including gateway self config, currency and gateway which accpet in the system.
 
 - application/controllers/Payment.php
